@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UCHCECARE | Ondo State Healthcare Initiative</title>
-    <meta name="description" content="Affordable, Accessible Healthcare and Pharmacy for Every Resident of Ondo State">
+    <title>UCHEcare Pharmacy | Your Health, Our Priority</title>
+    <meta name="description" content="Ondo City's premier community pharmacy, clinic, and supermarket. PCN certified. Fast delivery and prescription fulfillment.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,13 +54,12 @@
     <style>
         .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
         .hero-bg {
-            background-image: linear-gradient(rgba(6, 78, 59, 0.85), rgba(30, 58, 138, 0.85)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+            background-image: linear-gradient(rgba(6, 78, 59, 0.85), rgba(30, 58, 138, 0.85)), url('https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
             background-size: cover;
             background-position: center;
         }
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
-        /* Hide scrollbar for clean horizontal scrolls */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
@@ -74,18 +73,20 @@
                 <!-- Logo -->
                 <a href="#" class="flex items-center gap-2">
                     <div class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-md">
-                        <i class="fa-solid fa-heart-pulse"></i>
+                        <i class="fa-solid fa-prescription-bottle-medical"></i>
                     </div>
-                    <span class="font-extrabold text-2xl tracking-tight text-primary-900">UCHCE<span class="text-secondary-600">CARE</span></span>
+                    <span class="font-extrabold text-2xl tracking-tight text-primary-900">UCHE<span class="text-secondary-600">care</span></span>
                 </a>
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#about" class="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors">About Us</a>
-                    <a href="#programs" class="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors">Programs</a>
-                    <a href="#centers" class="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors">Find a Center</a>
-                    <a href="#pharmacy" class="text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors"><i class="fa-solid fa-store mr-1"></i> Pharmacy</a>
-                    <a href="#register" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2.5 rounded-full font-semibold text-sm transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Register Now</a>
+                    <a href="#services" class="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors">Services</a>
+                    <a href="#shop" class="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors">Shop Online</a>
+                    <a href="#location" class="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors">Location & Hours</a>
+                    <a href="https://wa.me/2348169355619?text=Hello,%20I%20would%20like%20to%20upload%20my%20prescription" target="_blank" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2.5 rounded-full font-semibold text-sm transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 flex items-center gap-2">
+                        <i class="fa-solid fa-file-prescription"></i> Upload Prescription
+                    </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -101,109 +102,112 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full">
             <div class="px-4 pt-2 pb-6 space-y-2">
                 <a href="#about" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-primary-50 hover:text-primary-600 rounded-md">About Us</a>
-                <a href="#programs" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-primary-50 hover:text-primary-600 rounded-md">Programs</a>
-                <a href="#centers" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-primary-50 hover:text-primary-600 rounded-md">Find a Center</a>
-                <a href="#pharmacy" class="block px-3 py-3 text-base font-medium text-primary-600 hover:bg-primary-50 rounded-md"><i class="fa-solid fa-store mr-2"></i>Pharmacy</a>
-                <a href="#register" class="block text-center mt-4 bg-primary-600 text-white px-4 py-3 rounded-lg font-bold shadow-md">Register Now</a>
+                <a href="#services" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-primary-50 hover:text-primary-600 rounded-md">Services</a>
+                <a href="#shop" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-primary-50 hover:text-primary-600 rounded-md">Shop Online</a>
+                <a href="#location" class="block px-3 py-3 text-base font-medium text-gray-800 hover:bg-primary-50 hover:text-primary-600 rounded-md">Location & Hours</a>
+                <a href="https://wa.me/2348169355619?text=Hello,%20I%20would%20like%20to%20upload%20my%20prescription" target="_blank" class="block text-center mt-4 bg-primary-600 text-white px-4 py-3 rounded-lg font-bold shadow-md flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-file-prescription"></i> Upload Prescription
+                </a>
             </div>
         </div>
     </nav>
 
     <!-- 1. HERO SECTION -->
-    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 hero-bg overflow-hidden flex items-center min-h-[90vh]">
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 hero-bg overflow-hidden flex items-center min-h-[85vh]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center lg:text-left">
             <div class="lg:w-2/3 animate-fade-in-up">
                 <span class="inline-block py-1 px-3 rounded-full bg-white/20 text-white backdrop-blur-sm text-sm font-semibold mb-6 border border-white/30 shadow-sm">
-                    <i class="fa-solid fa-shield-halved mr-2 text-green-300"></i>Ondo State Government-Backed Initiative
+                    <i class="fa-solid fa-certificate mr-2 text-green-300"></i>PCN & PSN Certified Pharmacy
                 </span>
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6">
-                    Affordable, Accessible Healthcare for <span class="text-green-300">Every Resident</span> of Ondo State
+                    Your Health, <span class="text-green-300">Our Priority.</span>
                 </h1>
                 <p class="text-lg sm:text-xl text-gray-200 mb-10 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
-                    Connecting communities to quality primary care, essential medicines, and emergency support. Your health is our state's priority.
+                    Ondo City’s premier community pharmacy. From professional health consultations and exact prescription fulfillment to your daily supermarket essentials, all delivered to your doorstep.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="#register" class="bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
-                        Register for Care <i class="fa-solid fa-arrow-right"></i>
+                    <a href="https://wa.me/2348169355619?text=Hello,%20I%20would%20like%20to%20order%20medications" target="_blank" class="bg-[#25D366] hover:bg-[#1ebd5a] text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Chat & Order Now
                     </a>
-                    <a href="#centers" class="bg-white hover:bg-gray-50 text-primary-900 px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 border border-transparent">
-                        <i class="fa-solid fa-location-dot text-secondary-600"></i> Find a Health Center
+                    <a href="#shop" class="bg-white hover:bg-gray-50 text-primary-900 px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 border border-transparent">
+                        <i class="fa-solid fa-basket-shopping text-secondary-600"></i> Browse Supermarket
                     </a>
                 </div>
-                <div class="mt-6 flex items-center justify-center lg:justify-start gap-2 text-sm text-gray-300 font-medium">
-                    <i class="fa-solid fa-check-circle text-green-400"></i> Quick Verification 
-                    <span class="mx-2 opacity-50">|</span> 
-                    <i class="fa-solid fa-lock text-green-400"></i> 100% Secure & Confidential
+                <div class="mt-6 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-300 font-medium">
+                    <span><i class="fa-solid fa-truck-fast text-green-400 mr-1"></i> Home Delivery</span>
+                    <span class="hidden sm:inline opacity-50">|</span> 
+                    <span><i class="fa-solid fa-user-doctor text-green-400 mr-1"></i> Free Consultations</span>
+                    <span class="hidden sm:inline opacity-50">|</span> 
+                    <span><i class="fa-solid fa-check-double text-green-400 mr-1"></i> 100% Authentic</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- 2. TRUST SECTION -->
+    <!-- 2. TRUST & PARTNERS SECTION -->
     <section class="relative -mt-12 z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-white rounded-2xl shadow-xl p-8 lg:p-10 border border-gray-100 flex flex-col md:flex-row justify-around gap-8 text-center reveal">
-            <div class="flex flex-col items-center">
-                <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-secondary-600 text-2xl mb-4 shadow-sm">
-                    <i class="fa-solid fa-landmark"></i>
+        <div class="bg-white rounded-2xl shadow-xl p-6 lg:p-8 border border-gray-100 flex flex-col md:flex-row items-center justify-between gap-8 text-center reveal">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center text-primary-600 text-xl shadow-sm">
+                    <i class="fa-solid fa-shield-halved"></i>
                 </div>
-                <h3 class="text-3xl font-bold text-gray-900 mb-1">State Backed</h3>
-                <p class="text-gray-500 font-medium">Official Ondo State Initiative</p>
+                <div class="text-left">
+                    <p class="font-bold text-gray-900 leading-tight">Fully Licensed</p>
+                    <p class="text-xs text-gray-500 font-medium">PCN & PSN Registered</p>
+                </div>
             </div>
-            <div class="hidden md:block w-px bg-gray-200"></div>
-            <div class="flex flex-col items-center">
-                <div class="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center text-primary-600 text-2xl mb-4 shadow-sm">
-                    <i class="fa-solid fa-map-location-dot"></i>
+            <div class="hidden md:block w-px h-10 bg-gray-200"></div>
+            <div class="text-center w-full md:w-auto flex-1">
+                <p class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wider">Trusted Distribution Partners</p>
+                <div class="flex justify-center items-center gap-6 md:gap-10 text-gray-400 font-bold text-lg grayscale opacity-70">
+                    <span>EMZOR</span>
+                    <span>FIDSON</span>
+                    <span>VITABIOTICS</span>
                 </div>
-                <h3 class="text-3xl font-bold text-gray-900 mb-1">18 LGAs</h3>
-                <p class="text-gray-500 font-medium">Coverage across all areas</p>
-            </div>
-            <div class="hidden md:block w-px bg-gray-200"></div>
-            <div class="flex flex-col items-center">
-                <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-secondary-600 text-2xl mb-4 shadow-sm">
-                    <i class="fa-solid fa-users"></i>
-                </div>
-                <h3 class="text-3xl font-bold text-gray-900 mb-1">150k+</h3>
-                <p class="text-gray-500 font-medium">Residents currently covered</p>
             </div>
         </div>
     </section>
 
-    <!-- 3. ABOUT UCHCECARE -->
+    <!-- 3. ABOUT UCHECARE & PHARMACIST PROFILE -->
     <section id="about" class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="reveal">
                     <div class="inline-block px-4 py-1.5 rounded-full bg-primary-100 text-primary-700 font-semibold text-sm mb-6">
-                        About The Initiative
+                        About UCHEcare
                     </div>
                     <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6 leading-tight">
-                        Transforming Healthcare Delivery in Ondo State
+                        Bridging the Gap Between Clinical Care and Convenience
                     </h2>
                     <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                        UCHCECARE was established with a singular vision: to ensure that no resident of Ondo State is left behind when it comes to quality medical care. We bridge the gap between government resources and community needs.
+                        Located in the heart of Ondo City, UCHEcare is more than just a place to buy medication. We are a community health hub dedicated to improving your quality of life. 
                     </p>
-                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                        From primary health centers in rural communities to our integrated digital pharmacy, we are making healthcare accessible, affordable, and reliable.
-                    </p>
+                    
+                    <!-- Pharmacist Profile Card -->
+                    <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm mb-8 flex items-start gap-4">
+                        <div class="w-16 h-16 bg-primary-50 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-user-tie text-2xl text-primary-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg">Pharm. Shop Tamaraumienmene</h4>
+                            <p class="text-sm text-primary-600 font-medium mb-2">Lead Pharmacist & Manager</p>
+                            <p class="text-sm text-gray-600 leading-relaxed">"Our mandate is to ensure every patient receives accurate prescriptions, genuine medications, and compassionate advice. Your wellbeing is our personal responsibility."</p>
+                        </div>
+                    </div>
+
                     <ul class="space-y-4 mb-8">
                         <li class="flex items-center text-gray-700 font-medium">
-                            <i class="fa-solid fa-check text-primary-500 bg-primary-50 p-1.5 rounded-full mr-3 text-sm"></i> Subsidized treatments for registered members
+                            <i class="fa-solid fa-check text-primary-500 bg-primary-50 p-1.5 rounded-full mr-3 text-sm"></i> NAFDAC Approved & Authentic Medications
                         </li>
                         <li class="flex items-center text-gray-700 font-medium">
-                            <i class="fa-solid fa-check text-primary-500 bg-primary-50 p-1.5 rounded-full mr-3 text-sm"></i> Authentic, state-approved medications
-                        </li>
-                        <li class="flex items-center text-gray-700 font-medium">
-                            <i class="fa-solid fa-check text-primary-500 bg-primary-50 p-1.5 rounded-full mr-3 text-sm"></i> 24/7 dedicated support via WhatsApp
+                            <i class="fa-solid fa-check text-primary-500 bg-primary-50 p-1.5 rounded-full mr-3 text-sm"></i> Private, confidential health counseling
                         </li>
                     </ul>
-                    <a href="#register" class="text-primary-600 font-bold hover:text-primary-700 flex items-center gap-2">
-                        Learn more about eligibility <i class="fa-solid fa-arrow-right"></i>
-                    </a>
                 </div>
                 <div class="relative reveal">
                     <div class="absolute -inset-4 bg-gradient-to-r from-primary-200 to-secondary-200 rounded-3xl transform rotate-3 opacity-50"></div>
-                    <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Healthcare professionals in action" class="relative rounded-3xl shadow-2xl object-cover h-[500px] w-full">
+                    <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Pharmacy Interior" class="relative rounded-3xl shadow-2xl object-cover h-[500px] w-full">
                     
                     <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl max-w-xs border border-gray-100 hidden md:block">
                         <div class="flex items-center gap-4">
@@ -211,8 +215,8 @@
                                 <i class="fa-solid fa-heart-circle-check"></i>
                             </div>
                             <div>
-                                <p class="text-sm text-gray-500 font-medium">Community Impact</p>
-                                <p class="font-bold text-gray-900 leading-none">Trusted by Locals</p>
+                                <p class="text-sm text-gray-500 font-medium">Community Choice</p>
+                                <p class="font-bold text-gray-900 leading-none">Voted #1 in Ondo</p>
                             </div>
                         </div>
                     </div>
@@ -221,148 +225,76 @@
         </div>
     </section>
 
-    <!-- 4. OUR PROGRAMS -->
-    <section id="programs" class="py-24 bg-white">
+    <!-- 4. CORE SERVICES -->
+    <section id="services" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 reveal">
-                <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4">Targeted Health Programs</h2>
-                <p class="text-lg text-gray-600">Comprehensive care plans designed for specific demographics to ensure specialized, effective treatment across Ondo State.</p>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4">Comprehensive Care Services</h2>
+                <p class="text-lg text-gray-600">We combine clinical expertise with modern retail convenience to serve all your health and daily needs.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Card 1 -->
                 <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group reveal">
-                    <div class="w-14 h-14 bg-pink-100 text-pink-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-baby"></i>
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-file-prescription"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Maternal & Child Care</h3>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">Free antenatal checks, immunization drives, and nutritional support for nursing mothers and infants.</p>
-                    <a href="#register" class="text-primary-600 font-semibold text-sm hover:text-primary-700 flex items-center gap-1">Enroll Now <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Prescription Upload</h3>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">Skip the queue. Snap a picture of your doctor's note, send it via WhatsApp, and we'll prepare your medication instantly.</p>
+                    <a href="https://wa.me/2348169355619" target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700 flex items-center gap-1">Upload Now <i class="fa-solid fa-chevron-right text-xs"></i></a>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group reveal delay-100">
-                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-person-cane"></i>
+                    <div class="w-14 h-14 bg-pink-100 text-pink-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-stethoscope"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Elderly Health Support</h3>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">Subsidized treatments for chronic conditions like hypertension and arthritis for citizens aged 65+.</p>
-                    <a href="#register" class="text-primary-600 font-semibold text-sm hover:text-primary-700 flex items-center gap-1">Enroll Now <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Health Consultations</h3>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">Walk in for quick, accurate checks including Blood Pressure monitoring, Blood Sugar testing, and weight management advice.</p>
+                    <a href="#location" class="text-primary-600 font-semibold text-sm hover:text-primary-700 flex items-center gap-1">Visit Store <i class="fa-solid fa-chevron-right text-xs"></i></a>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group reveal delay-200">
                     <div class="w-14 h-14 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-truck-medical"></i>
+                        <i class="fa-solid fa-motorcycle"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Rural Outreach</h3>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">Mobile clinics bringing diagnostics and essential primary healthcare directly to remote villages.</p>
-                    <a href="#register" class="text-primary-600 font-semibold text-sm hover:text-primary-700 flex items-center gap-1">Learn More <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Fast Home Delivery</h3>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">Can't leave the house? We offer swift, discreet delivery of all medications and supermarket items directly to your home in Ondo City.</p>
+                    <a href="https://wa.me/2348169355619" target="_blank" class="text-primary-600 font-semibold text-sm hover:text-primary-700 flex items-center gap-1">Request Delivery <i class="fa-solid fa-chevron-right text-xs"></i></a>
                 </div>
 
                 <!-- Card 4 -->
                 <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group reveal delay-300">
                     <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-stethoscope"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Preventive Healthcare</h3>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">Regular health screenings, malaria prevention programs, and community sanitation education.</p>
-                    <a href="#register" class="text-primary-600 font-semibold text-sm hover:text-primary-700 flex items-center gap-1">Learn More <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Supermarket Mart</h3>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">Shop your daily essentials. We stock high-quality toiletries, premium cosmetics, baby food, diapers, and nutritional supplements.</p>
+                    <a href="#shop" class="text-primary-600 font-semibold text-sm hover:text-primary-700 flex items-center gap-1">Browse Items <i class="fa-solid fa-chevron-right text-xs"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 5. FIND A HEALTH CENTER -->
-    <section id="centers" class="py-24 bg-primary-900 text-white relative overflow-hidden">
-        <!-- Decorative bg -->
-        <div class="absolute top-0 right-0 w-96 h-96 bg-primary-800 rounded-full blur-3xl opacity-50 transform translate-x-1/2 -translate-y-1/2"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-secondary-900 rounded-full blur-3xl opacity-50 transform -translate-x-1/2 translate-y-1/2"></div>
-        
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="reveal">
-                    <h2 class="text-3xl lg:text-4xl font-extrabold mb-4">Find a Healthcare Center Near You</h2>
-                    <p class="text-primary-100 mb-8 text-lg font-light">With state-of-the-art primary health centers spread across all 18 Local Government Areas, quality care is never far away.</p>
-                    
-                    <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl shadow-xl">
-                        <form class="space-y-4" onsubmit="event.preventDefault(); alert('Showing centers near selected LGA...');">
-                            <div>
-                                <label class="block text-sm font-medium text-white mb-1">Select your LGA</label>
-                                <select class="w-full bg-white text-gray-900 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary-500 outline-none">
-                                    <option>Akure South</option>
-                                    <option>Akure North</option>
-                                    <option>Ondo West</option>
-                                    <option>Owo</option>
-                                    <option>Ilaje</option>
-                                    <option>Odigbo</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="w-full bg-white text-primary-900 font-bold rounded-lg px-4 py-3 hover:bg-gray-100 transition shadow-md">
-                                Search Centers
-                            </button>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="space-y-4 reveal delay-200">
-                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-2"><i class="fa-solid fa-location-crosshairs text-green-400"></i> Suggested Centers in Akure</h3>
-                    
-                    <!-- Center Item -->
-                    <div class="bg-white/10 hover:bg-white/20 border border-white/20 p-5 rounded-xl transition-colors backdrop-blur-sm flex justify-between items-center group">
-                        <div>
-                            <h4 class="font-bold text-lg text-white">Akure General Hospital</h4>
-                            <p class="text-primary-200 text-sm"><i class="fa-solid fa-map-pin mr-1 opacity-70"></i> Hospital Road, Akure South</p>
-                        </div>
-                        <a href="#" class="w-10 h-10 bg-white text-primary-900 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-
-                    <!-- Center Item -->
-                    <div class="bg-white/10 hover:bg-white/20 border border-white/20 p-5 rounded-xl transition-colors backdrop-blur-sm flex justify-between items-center group">
-                        <div>
-                            <h4 class="font-bold text-lg text-white">Oba-Ile Comprehensive HC</h4>
-                            <p class="text-primary-200 text-sm"><i class="fa-solid fa-map-pin mr-1 opacity-70"></i> Oba-Ile Road, Akure North</p>
-                        </div>
-                        <a href="#" class="w-10 h-10 bg-white text-primary-900 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    
-                    <!-- Center Item -->
-                    <div class="bg-white/10 hover:bg-white/20 border border-white/20 p-5 rounded-xl transition-colors backdrop-blur-sm flex justify-between items-center group">
-                        <div>
-                            <h4 class="font-bold text-lg text-white">Isinkan Primary Health Center</h4>
-                            <p class="text-primary-200 text-sm"><i class="fa-solid fa-map-pin mr-1 opacity-70"></i> Isinkan, Akure South</p>
-                        </div>
-                        <a href="#" class="w-10 h-10 bg-white text-primary-900 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6. SUPERMARKET / PHARMACY SECTION -->
-    <section id="pharmacy" class="py-24 bg-gray-50 border-t border-gray-200">
+    <!-- 5. PHARMACY & SUPERMARKET E-COMMERCE -->
+    <section id="shop" class="py-24 bg-gray-50 border-t border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 reveal">
                 <div class="max-w-2xl">
                     <div class="inline-block px-4 py-1.5 rounded-full bg-secondary-100 text-secondary-700 font-semibold text-sm mb-4">
-                        <i class="fa-solid fa-cart-shopping mr-2"></i>UCHCECARE Pharmacy
+                        <i class="fa-solid fa-store mr-2"></i>UCHEcare Online Store
                     </div>
-                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4">Official Health Supermarket</h2>
-                    <p class="text-gray-600 text-lg">Purchase subsidized, authentic medications, supplements, and health products. Fast delivery within Ondo State.</p>
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4">Check Inventory & Order</h2>
+                    <p class="text-gray-600 text-lg">Browse our popular categories. Can't find what you need? Send us a WhatsApp message to check stock instantly.</p>
                 </div>
                 <div class="mt-6 md:mt-0">
                     <p class="text-sm font-semibold text-gray-500 mb-2">Categories:</p>
                     <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
                         <button class="px-4 py-2 bg-primary-600 text-white rounded-full text-sm font-medium whitespace-nowrap shadow-sm">All Products</button>
-                        <button class="px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-full text-sm font-medium whitespace-nowrap hover:bg-gray-50">Medicines</button>
+                        <button class="px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-full text-sm font-medium whitespace-nowrap hover:bg-gray-50">OTC Drugs</button>
+                        <button class="px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-full text-sm font-medium whitespace-nowrap hover:bg-gray-50">Toiletries & Cosmetics</button>
                         <button class="px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-full text-sm font-medium whitespace-nowrap hover:bg-gray-50">Baby Care</button>
-                        <button class="px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-full text-sm font-medium whitespace-nowrap hover:bg-gray-50">First Aid</button>
                     </div>
                 </div>
             </div>
@@ -374,17 +306,17 @@
                 <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow group reveal">
                     <div class="h-48 bg-gray-100 relative overflow-hidden flex items-center justify-center">
                         <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Medicine" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">Prescription Only</div>
+                        <div class="absolute top-3 left-3 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded">Best Seller</div>
                     </div>
                     <div class="p-5">
-                        <p class="text-xs text-gray-500 font-medium mb-1">Antimalarial</p>
-                        <h3 class="font-bold text-gray-900 text-lg mb-2 truncate">Artemether/Lumefantrine</h3>
+                        <p class="text-xs text-gray-500 font-medium mb-1">OTC Medication</p>
+                        <h3 class="font-bold text-gray-900 text-lg mb-2 truncate">Premium Antimalarials</h3>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="font-extrabold text-primary-600 text-xl">₦1,500</span>
-                            <span class="text-xs text-gray-400 line-through">₦2,500</span>
+                            <span class="text-sm font-medium text-gray-500">Various Brands</span>
+                            <span class="text-xs font-medium text-green-600 bg-green-50 px-2 py-0.5 rounded">In Stock</span>
                         </div>
-                        <a href="https://wa.me/2348000000000?text=I%20want%20to%20buy%20Artemether/Lumefantrine" target="_blank" class="w-full block text-center bg-[#25D366] hover:bg-[#1ebd5a] text-white py-2.5 rounded-lg font-semibold transition-colors shadow-sm">
-                            <i class="fa-brands fa-whatsapp mr-1"></i> Buy on WhatsApp
+                        <a href="https://wa.me/2348169355619?text=I%20want%20to%20inquire%20about%20Antimalarial%20drugs" target="_blank" class="w-full block text-center bg-[#25D366] hover:bg-[#1ebd5a] text-white py-2.5 rounded-lg font-semibold transition-colors shadow-sm">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> Order Now
                         </a>
                     </div>
                 </div>
@@ -393,16 +325,15 @@
                 <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow group reveal delay-100">
                     <div class="h-48 bg-gray-100 relative overflow-hidden flex items-center justify-center">
                         <img src="https://images.unsplash.com/photo-1550572017-edb991ee85bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Vitamins" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute top-3 left-3 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">OTC</div>
                     </div>
                     <div class="p-5">
-                        <p class="text-xs text-gray-500 font-medium mb-1">Supplements</p>
-                        <h3 class="font-bold text-gray-900 text-lg mb-2 truncate">Vitamin C & Zinc Plus</h3>
+                        <p class="text-xs text-gray-500 font-medium mb-1">Vitamins & Supplements</p>
+                        <h3 class="font-bold text-gray-900 text-lg mb-2 truncate">Immune Boosters (Vit C & Zinc)</h3>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="font-extrabold text-primary-600 text-xl">₦2,200</span>
+                            <span class="text-sm font-medium text-gray-500">Vitabiotics & More</span>
                         </div>
-                        <a href="https://wa.me/2348000000000?text=I%20want%20to%20buy%20Vitamin%20C%20and%20Zinc" target="_blank" class="w-full block text-center bg-[#25D366] hover:bg-[#1ebd5a] text-white py-2.5 rounded-lg font-semibold transition-colors shadow-sm">
-                            <i class="fa-brands fa-whatsapp mr-1"></i> Buy on WhatsApp
+                        <a href="https://wa.me/2348169355619?text=I%20want%20to%20buy%20Vitamin%20C%20and%20Zinc" target="_blank" class="w-full block text-center bg-[#25D366] hover:bg-[#1ebd5a] text-white py-2.5 rounded-lg font-semibold transition-colors shadow-sm">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> Order Now
                         </a>
                     </div>
                 </div>
@@ -410,17 +341,16 @@
                 <!-- Product 3 -->
                 <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow group reveal delay-200">
                     <div class="h-48 bg-gray-100 relative overflow-hidden flex items-center justify-center p-4">
-                        <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Baby Care" class="object-cover w-full h-full rounded group-hover:scale-105 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1629198725801-b75fba18d18d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Cosmetics" class="object-cover w-full h-full rounded group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="p-5">
-                        <p class="text-xs text-gray-500 font-medium mb-1">Baby Care</p>
-                        <h3 class="font-bold text-gray-900 text-lg mb-2 truncate">Premium Baby Formula</h3>
+                        <p class="text-xs text-gray-500 font-medium mb-1">Supermarket</p>
+                        <h3 class="font-bold text-gray-900 text-lg mb-2 truncate">Cosmetics & Toiletries</h3>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="font-extrabold text-primary-600 text-xl">₦8,500</span>
-                            <span class="text-xs font-medium text-secondary-600 bg-secondary-50 px-2 py-0.5 rounded">In Stock</span>
+                            <span class="text-sm font-medium text-gray-500">Lotions, Soaps, etc.</span>
                         </div>
-                        <a href="https://wa.me/2348000000000?text=I%20want%20to%20buy%20Premium%20Baby%20Formula" target="_blank" class="w-full block text-center bg-[#25D366] hover:bg-[#1ebd5a] text-white py-2.5 rounded-lg font-semibold transition-colors shadow-sm">
-                            <i class="fa-brands fa-whatsapp mr-1"></i> Buy on WhatsApp
+                        <a href="https://wa.me/2348169355619?text=I%20want%20to%20inquire%20about%20your%20cosmetics%20section" target="_blank" class="w-full block text-center bg-[#25D366] hover:bg-[#1ebd5a] text-white py-2.5 rounded-lg font-semibold transition-colors shadow-sm">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> Order Now
                         </a>
                     </div>
                 </div>
@@ -428,190 +358,97 @@
                 <!-- Product 4 -->
                 <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow group reveal delay-300">
                     <div class="h-48 bg-gray-100 relative overflow-hidden flex items-center justify-center p-4">
-                        <img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="First Aid" class="object-cover w-full h-full rounded group-hover:scale-105 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Baby Care" class="object-cover w-full h-full rounded group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="p-5">
-                        <p class="text-xs text-gray-500 font-medium mb-1">First Aid</p>
-                        <h3 class="font-bold text-gray-900 text-lg mb-2 truncate">Complete Family First Aid Kit</h3>
+                        <p class="text-xs text-gray-500 font-medium mb-1">Baby Care</p>
+                        <h3 class="font-bold text-gray-900 text-lg mb-2 truncate">Baby Formula & Diapers</h3>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="font-extrabold text-primary-600 text-xl">₦12,000</span>
+                            <span class="text-sm font-medium text-gray-500">Top Brands</span>
                         </div>
-                        <a href="https://wa.me/2348000000000?text=I%20want%20to%20buy%20First%20Aid%20Kit" target="_blank" class="w-full block text-center bg-[#25D366] hover:bg-[#1ebd5a] text-white py-2.5 rounded-lg font-semibold transition-colors shadow-sm">
-                            <i class="fa-brands fa-whatsapp mr-1"></i> Buy on WhatsApp
+                        <a href="https://wa.me/2348169355619?text=I%20want%20to%20inquire%20about%20Baby%20Products" target="_blank" class="w-full block text-center bg-[#25D366] hover:bg-[#1ebd5a] text-white py-2.5 rounded-lg font-semibold transition-colors shadow-sm">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> Order Now
                         </a>
                     </div>
                 </div>
 
             </div>
-            <p class="text-xs text-center text-gray-500 mt-6"><i class="fa-solid fa-shield-halved text-green-500"></i> All products are NAFDAC approved and verified by the Ondo State Ministry of Health. No hidden fees.</p>
-        </div>
-    </section>
-
-    <!-- 7. HOW IT WORKS -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Simple Path to Better Health</h2>
-                <p class="text-gray-600">Accessing healthcare through UCHCECARE is fast and straightforward.</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8 relative reveal">
-                <!-- Connecting Line (Desktop) -->
-                <div class="hidden md:block absolute top-1/2 left-[15%] right-[15%] h-0.5 bg-gray-200 -z-10 transform -translate-y-12"></div>
-
-                <!-- Step 1 -->
-                <div class="bg-white text-center">
-                    <div class="w-20 h-20 mx-auto bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-3xl font-black mb-6 shadow-md border-4 border-white relative z-10">
-                        1
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Register</h3>
-                    <p class="text-gray-600 text-sm">Fill out the simple form below with your basic details and LGA information.</p>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="bg-white text-center mt-8 md:mt-0">
-                    <div class="w-20 h-20 mx-auto bg-secondary-100 text-secondary-600 rounded-full flex items-center justify-center text-3xl font-black mb-6 shadow-md border-4 border-white relative z-10">
-                        2
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Get Verified</h3>
-                    <p class="text-gray-600 text-sm">Receive your UCHCECARE digital ID via SMS/WhatsApp within 24 hours.</p>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="bg-white text-center mt-8 md:mt-0">
-                    <div class="w-20 h-20 mx-auto bg-green-100 text-green-600 rounded-full flex items-center justify-center text-3xl font-black mb-6 shadow-md border-4 border-white relative z-10">
-                        3
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Access Care & Buy Products</h3>
-                    <p class="text-gray-600 text-sm">Visit any designated health center or buy subsidized products via our pharmacy.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 8. TESTIMONIALS -->
-    <section class="py-24 bg-gray-50 border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-extrabold text-center text-gray-900 mb-16 reveal">Trusted by Local Communities</h2>
             
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative reveal">
-                    <i class="fa-solid fa-quote-left text-4xl text-primary-100 absolute top-6 right-6"></i>
-                    <p class="text-gray-600 italic mb-6 relative z-10">"Getting my hypertension drugs used to be difficult and expensive. Since I registered with UCHCECARE, I just order via WhatsApp and it's delivered at half the cost. God bless this initiative."</p>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Mrs. Adebayo" class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-900 text-sm">Mrs. Adebayo O.</h4>
-                            <p class="text-xs text-gray-500">Ondo West LGA</p>
-                        </div>
-                    </div>
+            <!-- Upload Prescription Banner -->
+            <div class="mt-12 bg-primary-900 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between shadow-xl reveal">
+                <div class="text-white mb-6 md:mb-0 md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-2"><i class="fa-solid fa-file-prescription text-primary-300 mr-2"></i> Have a doctor's prescription?</h3>
+                    <p class="text-primary-100">Don't stress. Take a clear picture of your prescription and send it directly to our pharmacists via WhatsApp. We'll pack it and notify you when it's ready for pickup or delivery.</p>
                 </div>
-
-                <!-- Testimonial 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative reveal delay-100">
-                    <i class="fa-solid fa-quote-left text-4xl text-primary-100 absolute top-6 right-6"></i>
-                    <p class="text-gray-600 italic mb-6 relative z-10">"When my child had a severe fever in the middle of the night, the UCHCECARE directory helped me find the nearest open primary health center. The care was prompt and professional."</p>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Mr. Ojo" class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-900 text-sm">Mr. Ojo Ayodele</h4>
-                            <p class="text-xs text-gray-500">Akure South LGA</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative reveal delay-200">
-                    <i class="fa-solid fa-quote-left text-4xl text-primary-100 absolute top-6 right-6"></i>
-                    <p class="text-gray-600 italic mb-6 relative z-10">"The WhatsApp pharmacy is a lifesaver. I bought baby formula and a first aid kit. The response was immediate, and I was assured of the product's authenticity."</p>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Ms. Nwosu" class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-900 text-sm">Ms. Funmilayo Akin</h4>
-                            <p class="text-xs text-gray-500">Owo LGA</p>
-                        </div>
-                    </div>
-                </div>
+                <a href="https://wa.me/2348169355619?text=Hello,%20I%20want%20to%20upload%20my%20prescription" target="_blank" class="w-full md:w-auto bg-white text-primary-900 px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition-colors shadow-lg whitespace-nowrap">
+                    Upload via WhatsApp
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- 9. REGISTRATION & CTA -->
-    <section id="register" class="py-24 bg-gradient-to-br from-primary-700 to-primary-900 relative overflow-hidden">
-        <!-- SVG Pattern -->
-        <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
-        
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row reveal">
-                <!-- CTA Text -->
-                <div class="p-10 md:w-5/12 bg-gray-50 flex flex-col justify-center">
-                    <h2 class="text-3xl font-extrabold text-gray-900 mb-4 leading-tight">Join Thousands of Ondo Residents Getting Quality Healthcare Today</h2>
-                    <p class="text-gray-600 mb-6 text-sm">Registering is completely free. Gain immediate access to subsidized care, priority center visits, and our official online pharmacy.</p>
-                    <a href="https://wa.me/2348000000000" target="_blank" class="flex items-center justify-center gap-2 w-full border-2 border-green-500 text-green-600 hover:bg-green-50 font-bold py-3 px-4 rounded-xl transition-colors">
-                        <i class="fa-brands fa-whatsapp text-xl"></i> Chat with Support
-                    </a>
-                </div>
+    <!-- 6. LOCATION & CONTACT -->
+    <section id="location" class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
                 
-                <!-- Form -->
-                <div class="p-10 md:w-7/12 bg-white">
-                    <form onsubmit="event.preventDefault(); alert('Registration successful! You will receive a confirmation SMS shortly.');">
-                        <h3 class="text-xl font-bold text-gray-900 mb-6">Quick Registration</h3>
-                        
-                        <div class="space-y-4">
-                            <div>
-                                <label class="block text-xs font-semibold text-gray-600 uppercase mb-1">Full Name</label>
-                                <input type="text" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:bg-white transition-colors" placeholder="e.g. John Doe">
+                <div class="reveal">
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4">Visit UCHEcare Pharmacy</h2>
+                    <p class="text-gray-600 mb-8 text-lg">We are conveniently located in Ondo City. Drop by for your prescriptions, consultations, or supermarket shopping.</p>
+                    
+                    <div class="space-y-6">
+                        <!-- Address -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary-50 text-primary-600 rounded-full flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-map-location-dot"></i>
                             </div>
-                            
                             <div>
-                                <label class="block text-xs font-semibold text-gray-600 uppercase mb-1">Phone Number (WhatsApp Active)</label>
-                                <input type="tel" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:bg-white transition-colors" placeholder="080XXXXXXXX">
+                                <h4 class="font-bold text-gray-900 text-lg">Our Location</h4>
+                                <p class="text-gray-600">Ondo City, Ondo State, Nigeria.<br><span class="text-sm italic text-gray-500">(Contact us for precise landmark directions)</span></p>
                             </div>
-                            
-                            <div>
-                                <label class="block text-xs font-semibold text-gray-600 uppercase mb-1">Local Government Area</label>
-                                <select required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:bg-white transition-colors">
-                                    <option value="" disabled selected>Select LGA</option>
-                                    <option>Akoko North-East</option>
-                                    <option>Akoko North-West</option>
-                                    <option>Akoko South-East</option>
-                                    <option>Akoko South-West</option>
-                                    <option>Akure North</option>
-                                    <option>Akure South</option>
-                                    <option>Ese Odo</option>
-                                    <option>Idanre</option>
-                                    <option>Ifedore</option>
-                                    <option>Ilaje</option>
-                                    <option>Ile Oluji/Okeigbo</option>
-                                    <option>Irele</option>
-                                    <option>Odigbo</option>
-                                    <option>Okitipupa</option>
-                                    <option>Ondo East</option>
-                                    <option>Ondo West</option>
-                                    <option>Ose</option>
-                                    <option>Owo</option>
-                                </select>
-                            </div>
-
-                            <button type="submit" class="w-full bg-primary-600 hover:bg-primary-700 text-white font-bold py-4 rounded-xl mt-4 transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
-                                Complete Registration
-                            </button>
-                            <p class="text-xs text-center text-gray-400 mt-3"><i class="fa-solid fa-lock"></i> Your data is encrypted and stored securely.</p>
                         </div>
-                    </form>
+
+                        <!-- Hours -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg">Operating Hours</h4>
+                                <p class="text-gray-600">Monday - Saturday: 8:00 AM - 9:00 PM<br>Sunday: 12:00 PM - 8:00 PM</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-green-50 text-green-600 rounded-full flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg">Direct Contact</h4>
+                                <p class="text-gray-600 font-medium text-lg">0816 935 5619</p>
+                                <p class="text-gray-500 text-sm">info@uchecare.com.ng</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Mock Map / Visual -->
+                <div class="bg-gray-100 rounded-3xl h-[400px] lg:h-[500px] w-full relative overflow-hidden shadow-inner border border-gray-200 flex items-center justify-center reveal delay-200">
+                    <!-- Note to Dev: Replace this div with an actual Google Maps iframe embed once precise address is acquired -->
+                    <div class="text-center p-8">
+                        <i class="fa-solid fa-location-dot text-6xl text-primary-300 mb-4 animate-bounce"></i>
+                        <h3 class="text-2xl font-bold text-gray-700">Ondo City, Nigeria</h3>
+                        <p class="text-gray-500 mt-2">Google Maps Integration Ready</p>
+                        <a href="https://maps.google.com" target="_blank" class="mt-4 inline-block bg-white border border-gray-300 text-gray-700 px-6 py-2 rounded-lg font-medium hover:bg-gray-50 transition">Open in Maps</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- 10. FOOTER -->
+    <!-- 7. FOOTER -->
     <footer class="bg-gray-900 text-white pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
@@ -619,11 +456,11 @@
                 <div class="md:col-span-1">
                     <a href="#" class="flex items-center gap-2 mb-4">
                         <div class="w-8 h-8 bg-primary-500 rounded flex items-center justify-center text-white font-bold shadow-md">
-                            <i class="fa-solid fa-heart-pulse text-sm"></i>
+                            <i class="fa-solid fa-prescription-bottle-medical text-sm"></i>
                         </div>
-                        <span class="font-extrabold text-xl tracking-tight text-white">UCHCE<span class="text-secondary-400">CARE</span></span>
+                        <span class="font-extrabold text-xl tracking-tight text-white">UCHE<span class="text-secondary-400">care</span></span>
                     </a>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">Dedicated to providing affordable, accessible, and high-quality healthcare and pharmaceutical services to every resident of Ondo State.</p>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">Your health, our priority. Ondo City's trusted provider of pharmaceutical care, clinical checks, and daily supermarket essentials.</p>
                     <div class="flex space-x-4">
                         <a href="#" class="w-8 h-8 bg-gray-800 text-gray-400 rounded-full flex items-center justify-center hover:bg-primary-500 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f text-sm"></i></a>
                         <a href="#" class="w-8 h-8 bg-gray-800 text-gray-400 rounded-full flex items-center justify-center hover:bg-primary-500 hover:text-white transition-colors"><i class="fa-brands fa-twitter text-sm"></i></a>
@@ -635,21 +472,21 @@
                 <div>
                     <h4 class="text-lg font-bold mb-4 text-white">Quick Links</h4>
                     <ul class="space-y-3 text-sm text-gray-400">
-                        <li><a href="#about" class="hover:text-primary-400 transition-colors">About UCHCECARE</a></li>
-                        <li><a href="#programs" class="hover:text-primary-400 transition-colors">Health Programs</a></li>
-                        <li><a href="#centers" class="hover:text-primary-400 transition-colors">Find a Health Center</a></li>
-                        <li><a href="#register" class="hover:text-primary-400 transition-colors">Enroll for Care</a></li>
+                        <li><a href="#about" class="hover:text-primary-400 transition-colors">About the Pharmacy</a></li>
+                        <li><a href="#services" class="hover:text-primary-400 transition-colors">Health Consultations</a></li>
+                        <li><a href="#shop" class="hover:text-primary-400 transition-colors">Online Store</a></li>
+                        <li><a href="https://wa.me/2348169355619" class="hover:text-primary-400 transition-colors">Upload Prescription</a></li>
                     </ul>
                 </div>
 
-                <!-- Pharmacy -->
+                <!-- Departments -->
                 <div>
-                    <h4 class="text-lg font-bold mb-4 text-white">Supermarket / Pharmacy</h4>
+                    <h4 class="text-lg font-bold mb-4 text-white">Departments</h4>
                     <ul class="space-y-3 text-sm text-gray-400">
-                        <li><a href="#pharmacy" class="hover:text-primary-400 transition-colors">Order Medicines</a></li>
-                        <li><a href="#pharmacy" class="hover:text-primary-400 transition-colors">Baby Products</a></li>
-                        <li><a href="#pharmacy" class="hover:text-primary-400 transition-colors">Health Supplements</a></li>
-                        <li><a href="#pharmacy" class="hover:text-primary-400 transition-colors">First Aid Kits</a></li>
+                        <li><a href="#shop" class="hover:text-primary-400 transition-colors">Prescription Drugs</a></li>
+                        <li><a href="#shop" class="hover:text-primary-400 transition-colors">Over-The-Counter</a></li>
+                        <li><a href="#shop" class="hover:text-primary-400 transition-colors">Baby Products</a></li>
+                        <li><a href="#shop" class="hover:text-primary-400 transition-colors">Cosmetics & Toiletries</a></li>
                     </ul>
                 </div>
 
@@ -659,22 +496,22 @@
                     <ul class="space-y-3 text-sm text-gray-400">
                         <li class="flex items-start gap-3">
                             <i class="fa-solid fa-location-dot mt-1 text-primary-500"></i>
-                            <span>Ministry of Health Complex,<br>Alagbaka, Akure,<br>Ondo State, Nigeria</span>
+                            <span>Ondo City,<br>Ondo State, Nigeria</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <i class="fa-solid fa-phone text-primary-500"></i>
-                            <span>+234 800 000 0000</span>
+                            <span>0816 935 5619</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <i class="fa-solid fa-envelope text-primary-500"></i>
-                            <span>support@uchcecare.ng</span>
+                            <span>info@uchecare.com.ng</span>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-gray-500 text-sm">&copy; 2026 UCHCECARE Ondo State. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">&copy; 2026 UCHEcare Pharmacy. Licensed by PCN. All rights reserved.</p>
                 <div class="flex gap-4 text-sm text-gray-500">
                     <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
                     <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
@@ -684,7 +521,7 @@
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/2348000000000" target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50 animate-bounce" style="animation-duration: 3s;">
+    <a href="https://wa.me/2348169355619" target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50 animate-bounce" style="animation-duration: 3s;" title="Chat with Pharmacist">
         <i class="fa-brands fa-whatsapp text-3xl"></i>
     </a>
 
